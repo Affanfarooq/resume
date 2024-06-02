@@ -24,6 +24,32 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        @media (max-width: 768px) {
+            .display-1 {
+                font-size: 3rem !important;
+                /* Adjust the size as needed */
+            }
+
+            .position-absolute {
+                font-size: 2rem !important;
+                /* Adjust the size as needed */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .display-1 {
+                font-size: 2rem !important;
+                /* Adjust the size as needed */
+            }
+
+            .position-absolute {
+                font-size: 1.5rem !important;
+                /* Adjust the size as needed */
+            }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -76,20 +102,22 @@
 
     <div class="container-fluid bg-primary p-0">
         <div style="position: relative;">
-            <img src="img/banner3.jpg" class="img-fluid" alt="Background Image"
-                style="opacity: 0.95; object-fit: cover;width: 100%;height: 470px;">
+            <img src="img/slider1.jpg" class="img-fluid" alt="Background Image"
+                style="opacity: 0.8; object-fit: cover;width: 100%;height: 470px;">
             <div class="container py-5"
                 style="position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%)">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 text-center text-lg-left">
+                    <div class="col-lg-7  text-lg-left">
                         <h2 class="text-white font-weight-normal mb-0 mt-5">Hello, I'm</h2>
                         <h1 class="display-3 text-uppercase" style="color: white;">Affan Farooq !</h1>
                         <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                         <div class="typed-text d-none">
                             <h2 class="text-white font-weight-normal mb-2">Flutter App Developer</h2>
                         </div>
-                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4">
-                            <a href="img/Affan Resume.pdf" class="btn btn-outline-light mr-5" download="Affan Resume.pdf">Download CV</a>
+                        <div class="d-flex  justify-content-lg-start pt-4">
+                            <!-- <a href="img/Affan Resume.pdf" class="btn btn-outline-light mr-5"
+                                download="Affan Resume.pdf">Download CV</a> -->
+                                <button type="submit" class="btn btn-primary">Download CV</button>
                         </div>
                     </div>
                 </div>
@@ -104,6 +132,7 @@
     <!-- About Start -->
     <div class="container-fluid py-3" id="about"> <!-- Adjusted padding -->
         <div class="container">
+
             <div class="position-relative d-flex align-items-center justify-content-center"
                 style="margin-bottom: 24px;margin-top: 7px">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #d1d5d9;">About</h1>
@@ -117,7 +146,8 @@
 
                 <div class="col-lg-8">
                     <h3 class="mb-3" style="margin-top: 15px;color: rgb(96, 96, 96)">Flutter Mobile App Developer</h3>
-                    <p>Hello! I'm Affan Farooq, a passionate and dedicated Flutter developer with one year of experience
+                    <p style="text-align: justify;">Hello! I'm Affan Farooq, a passionate and dedicated Flutter
+                        developer with one year of experience
                         in creating impressive and functional mobile applications. My journey into the world of app
                         development began with a fascination for how technology can simplify and enhance everyday life.
                         This curiosity led me to specialize in Flutter, a versatile and powerful framework that allows
@@ -125,12 +155,14 @@
                     </p>
 
                     <p class="mb-2" style="color: rgb(96, 96, 96); font-weight: 500;">Why Choose Me?</p>
-                    <p>As a junior developer, I bring a fresh perspective and a strong willingness to learn and adapt. I
+                    <p style="text-align: justify;">As a junior developer, I bring a fresh perspective and a strong
+                        willingness to learn and adapt. I
                         am committed to staying updated with the latest industry trends and continuously improving my
                         skills. My goal is to contribute to innovative projects that make a difference and to grow
                         alongside a team of like-minded professionals.</p>
                     <p class="mb-1" style="color: rgb(96, 96, 96); font-weight: 500;">Let's Connect</p>
-                    <p>I'm always excited to discuss new opportunities and collaborations. Feel free to reach out to me
+                    <p style="text-align: justify;">I'm always excited to discuss new opportunities and collaborations.
+                        Feel free to reach out to me
                         through <a href="mailto:maffanfarooq@gmail.com">email</a> or connect with me on <a
                             href="https://www.linkedin.com/in/your-profile">LinkedIn</a> and <a
                             href="https://github.com/your-profile">GitHub</a>.</p>
@@ -149,10 +181,13 @@
     <!-- Qualification Start -->
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
+    
+            <div class="position-relative d-flex align-items-center justify-content-center"
+                style="margin-bottom: 24px;margin-top: 7px">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #d1d5d9;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
             </div>
+
 
 
             <div class="row align-items-start" style="padding-top: 50px;">
@@ -167,11 +202,10 @@
                                 style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Bachelor's</h5>
                             <p class="mb-2"><strong>ILMA University</strong> | <small>2020 - Present</small></p>
-                            <p>I am currently pursuing my Bachelor's degree at ILMA University. My studies have
-                                encompassed a range of subjects including [mention your major/minor subjects]. As of
-                                now, I am in my final semester, where I am focusing on [mention any specific courses or
-                                projects]. Throughout my academic journey, I have actively engaged in [mention any
-                                extracurricular activities or academic achievements].</p>
+                            <p style="text-align: justify;">I am currently pursuing my Bachelor's degree at ILMA
+                                University. I've actively engaged in extracurricular activities and maintained a
+                                commitment to academic excellence, preparing me well for future professional endeavors.
+                            </p>
                             <hr>
                         </div>
                         <div class="position-relative mb-4">
@@ -180,7 +214,8 @@
                             <h5 class="font-weight-bold mb-1">Intermediate</h5>
                             <p class="mb-2"><strong>Aisha Bawany Government College</strong> | <small>2018 -
                                     2020</small></p>
-                            <p>During my intermediate education at Aisha Bawany Government College from 2018 to 2020, I
+                            <p style="text-align: justify;">During my intermediate education at Aisha Bawany Government
+                                College from 2018 to 2020, I
                                 pursued subjects such as physics, chemistry, mathematics, and computer science. I
                                 actively participated in various academic and co-curricular activities, including
                                 science exhibitions, debates, and quizzes. Additionally, I engaged in volunteer work,
@@ -192,7 +227,8 @@
                                 style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Matriculation</h5>
                             <p class="mb-2"><strong>Danish Gah High School</strong> | <small>2016 - 2018</small></p>
-                            <p>I attended Danish Gah High School for my matriculation studies from 2016 to 2018. During
+                            <p style="text-align: justify;">I attended Danish Gah High School for my matriculation
+                                studies from 2016 to 2018. During
                                 this time, I focused on subjects such as mathematics, science, English, and social
                                 studies. I actively participated in extracurricular activities, including sports and
                                 cultural events.</p>
@@ -213,10 +249,12 @@
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-3">Flutter Development</h5>
-                            <p>Currently, I am working as a Flutter Developer at ILMA UNIVERSITY, where I am developing
+                            <p style="text-align: justify;">Currently, I am working as a Flutter Developer at ILMA
+                                UNIVERSITY, where I am developing
                                 a mobile application for my own university. This application allows students to access
                                 their academic records and other relevant information conveniently.</p>
-                            <p>As a Flutter Developer, I have been actively involved in developing mobile applications
+                            <p style="text-align: justify;">As a Flutter Developer, I have been actively involved in
+                                developing mobile applications
                                 using the Flutter framework. My responsibilities include:</p>
                             <ul>
                                 <li>Create intuitive and
@@ -235,9 +273,11 @@
                                 <li>Utilizing Firebase Firestore & Firebase Storage for data management.</li>
                                 <li>Implementing Firebase authentications, including email, OTP, Google, and Facebook
                                     authentications.</li>
-                                <li>I have experience in integrating Flutter with SQL Server databases, utilizing Node.js
+                                <li>I have experience in integrating Flutter with SQL Server databases, utilizing
+                                    Node.js
                                     and Express for server-side logic and mssql for database communication.</li>
-                                <li>Working on a multi-vendor app with admin, user, vendor & delivery panels, each tailored to specific roles for efficient management.</li>
+                                <li>Working on a multi-vendor app with admin, user, vendor & delivery panels, each
+                                    tailored to specific roles for efficient management.</li>
                                 <li>Contributing to projects such as hotel management systems, water supply apps, hair
                                     salon app, POS systems, CRUD applications, etc. using Firebase.</li>
                                 <li>Developing news apps, COVID-19 tracker app, Maths solver app using REST APIs and
@@ -482,7 +522,7 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #d1d5d9;">Gallery</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
             </div>
-           
+
             <div class="row portfolio-container">
 
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
@@ -495,7 +535,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-2">
-                        <h6>Food Panda  UI clone</h6>
+                        <h6>Food Panda UI clone</h6>
                     </div>
                 </div>
 
@@ -512,7 +552,7 @@
                         <h6>Instagram UI clone</h6>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/13.png" alt="">
@@ -551,7 +591,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-2">
-                        <h6>ILMA student  e-portal app</h6>
+                        <h6>ILMA student e-portal app</h6>
                     </div>
                 </div>
 
@@ -610,7 +650,7 @@
                         <h6>Todos app</h6>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/3.png" alt="">
@@ -624,7 +664,7 @@
                         <h6>Hotel management app</h6>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/4.png" alt="">
@@ -638,7 +678,7 @@
                         <h6>AI maths solver app</h6>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/6.png" alt="">
@@ -652,7 +692,7 @@
                         <h6>Covid tracker app</h6>
                     </div>
                 </div>
-            
+
             </div>
         </div>
     </div>
@@ -667,7 +707,7 @@
                 <h1 class="position-absolute text-uppercase text-primary">Get in Touch</h1>
             </div>
 
-            
+
             <div class="row pt-5">
                 <div class="col-lg-6 mb-5">
                     <h5 class="font-weight-medium mb-4">Send a Message</h5>
@@ -685,7 +725,7 @@
                     </form>
                 </div>
                 <div class="col-lg-2 mb-5">
-            
+
                 </div>
                 <div class="col-lg-4 mb-5">
                     <h5 class="font-weight-medium mb-4">Contact Information</h5>
@@ -696,7 +736,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- contact info end -->
 
 
@@ -705,12 +745,16 @@
         <div class="container text-center py-5">
             <!-- Social Media Links -->
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/yourprofile" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://facebook.com/yourprofile" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/yourprofile" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://instagram.com/yourprofile" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
             </div>
-    
+
             <!-- Navigation Links -->
             <div class="d-flex justify-content-center mb-3">
                 <a class="text-white" href="#privacy">Privacy</a>
@@ -721,14 +765,14 @@
                 <span class="px-3">|</span>
                 <a class="text-white" href="#help">Help</a>
             </div>
-    
+
             <!-- Copyright Information -->
             <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Affan Farooq</a>. All Rights Reserved.
                 Thanks for visiting !
             </p>
         </div>
     </div>
-    
+
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
